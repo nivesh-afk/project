@@ -13,8 +13,13 @@ User Input: Users provide a photo and select clothing from a model library.
 Process:
 
 1)Segmentation: Extracts precise masks of the human body from the input and library images.
+
 2)Joint Detection and Boundary Matching: Aligns the user’s body with the target clothing model.
+
 3)Parametric Comparison: Calculates differences between the two bodies.
+
 4)Content-Aware Warping: Adapts the clothing to fit the user's body shape.
+
 5)Head Swapping: Ensures a seamless composition of the final image.
+
 6)Output: A realistic image of the user wearing the selected clothing.
