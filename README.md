@@ -41,5 +41,6 @@ Articulated human pose estimation enhances the semantic understanding of images 
 2.	
 3.	Wei et al. [13] introduced a state-of-the-art system combining CNNs and a pose machine [11].
 4.	
-# 	Iterative Feedback: Carreira et al. [12] enhanced hierarchical feature extractors with iterative error feedback.
+# 	Iterative Feedback: Carreira et al. [12] 
+enhanced hierarchical feature extractors with iterative error feedback.
 
