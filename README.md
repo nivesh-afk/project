@@ -1,4 +1,4 @@
-# project 
+# project ClOTHS WRAPPING
 # Image-based clothes changing system
 Prior Work:
 
