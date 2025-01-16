@@ -44,3 +44,21 @@ Articulated human pose estimation enhances the semantic understanding of images 
 # 	Iterative Feedback: Carreira et al. [12] 
 enhanced hierarchical feature extractors with iterative error feedback.
 
+# Articulated Human Pose Estimation
+This field focuses on estimating human body poses in images, essential for understanding semantic content in visual data. Highlights include:
+1.Reduced Search Space Algorithm: Ferrari et al. improved estimation success rates by minimizing search complexity.
+
+2.Pictorial Structure Models: Introduced by Andriluka et al., providing a generic framework for pose estimation.
+
+3.Hybrid Approaches: Johnson and Everingham combined color segmentation and limb detection for enhanced results.
+
+4.Part-Based Models: Proven effective by various studies [5–8].
+
+5.Graphical Models and CNNs: The integration of these methods [10] achieved high performance.
+
+6.Inference Machines: Ramakrishna et al. proposed a machine leveraging rich spatial interactions.
+
+7.Iterative Error Feedback: Developed by Carreira et al., refining hierarchical feature extractors.
+
+8.Pose Machines: Wei et al. combined CNNs and pose machines for state-of-the-art results.
+
