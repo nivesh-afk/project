@@ -46,6 +46,7 @@ enhanced hierarchical feature extractors with iterative error feedback.
 
 # Articulated Human Pose Estimation
 This field focuses on estimating human body poses in images, essential for understanding semantic content in visual data. Highlights include:
+
 1.Reduced Search Space Algorithm: Ferrari et al. improved estimation success rates by minimizing search complexity.
 
 2.Pictorial Structure Models: Introduced by Andriluka et al., providing a generic framework for pose estimation.
@@ -61,4 +62,35 @@ This field focuses on estimating human body poses in images, essential for under
 7.Iterative Error Feedback: Developed by Carreira et al., refining hierarchical feature extractors.
 
 8.Pose Machines: Wei et al. combined CNNs and pose machines for state-of-the-art results.
+
+# Semantic Image Segmentation
+This area focuses on partitioning images into meaningful regions. Key advancements include:
+
+1.Interactive Methods: Blake et al. introduced probabilistic approaches for user-guided segmentation.
+
+2.Conditional Random Fields (CRFs): Widely applied for automatic segmentation systems, leading to improved results.
+
+3.Region Grouping: Techniques [17–20] tackle segmentation using grouped regions.
+
+4.Hierarchical Models: Combined with other methods [16, 18, 19] for enhanced segmentation performance.
+
+5.Salient Region Detection & Attention Models: Significantly boosted segmentation capabilities [21–23].
+
+6.Pixel-Wise Labeling: Zheng et al. developed methods labeling each pixel with object class and attributes.
+
+7.Deep Learning: Neural networks [15, 23] currently dominate, achieving state-of-the-art performance.
+
+
+# Image Warping
+Image warping involves deforming images based on control handles for manipulation:
+
+1.Optimization Methods: Used for image deformation.
+
+2.Radial Basis Functions (RBF): Another popular technique for warping.
+
+3.Moving Least Squares (MLS): Effective for smooth image deformation.
+
+4.Skeleton-Based Warping: Zhou et al. introduced resizing methods based on body skeletons and parameters.
+
+5.Finite Element Method (FEM): Kaufmann et al. proposed a unified framework using FEM for warping.
 
