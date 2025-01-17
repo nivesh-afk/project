@@ -94,3 +94,29 @@ Image warping involves deforming images based on control handles for manipulatio
 
 5.Finite Element Method (FEM): Kaufmann et al. proposed a unified framework using FEM for warping.
 
+
+# Initial Segmentation with GrabCut
+Algorithm:
+
+Graph-cut-based segmentation that iteratively optimizes masks.
+
+Traditionally requires user input, but here automated with prior knowledge.
+
+
+# Initial Segmentation with GrabCut
+Algorithm:
+
+Graph-cut-based segmentation that iteratively optimizes masks.
+ 
+Traditionally requires user input, but here automated with prior knowledge.
+
+
+
+
+
+
+
+
+
+
+
