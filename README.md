@@ -1,4 +1,5 @@
-# project ClOTHS WRAPPING
+# Project Image Based Clothes Changing System
+
 # Image-based clothes changing system
 Prior Work:
 
@@ -119,6 +120,42 @@ Heatmap values (0–255) are converted into a four-valued indicator function:
 
 
 ![Screenshot (23)](https://github.com/user-attachments/assets/4d0c8b0e-3749-4d72-94c2-bbfd75213274)
+
+
+
+# 4. Contour Detection for Refinement
+Hierarchical Contour Detection:
+
+Locates the human body contour as a polygon.
+
+Regions inside the polygon are designated as human body parts.
+
+
+
+# 5. Mask Refinement
+1.Challenges:
+
+Rough mask edges.
+Noise pixels affecting matching accuracy.
+
+2.Refinement Techniques:
+
+Median Filtering: Reduces noise but can lose details.
+Weighted Image Matting [33]: Effective but slow (>1 min for  480 x 640 images)
+
+
+3.Guided Image Filter [31]:
+
+Chosen for its speed and efficiency.
+Processes a 480×640 image in 0.1 seconds on standard hardware.
+
+# Results and Demonstration
+Output: The refined mask effectively separates the human from the background.
+Limitations Addressed:
+
+Combines saliency and skin detection to improve segmentation.
+Utilizes contour detection for better region delineation.
+Applies guided filtering to ensure clean edges and noise removal.
 
 
 
