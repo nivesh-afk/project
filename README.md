@@ -159,6 +159,55 @@ Applies guided filtering to ensure clean edges and noise removal.
 
 
 
+#  Partial Shape Matching 
+This section outlines the process of matching body contours for accurate image warping, emphasizing the need for precise alignment to avoid distortions. Here's an organized breakdown:
+
+
+
+# Body Contour Matching
+1. Boundary Point Extraction
+   
+From the segmentation mask, boundary points (C) are extracted using an edge detection algorithm.
+These points define the body contour for matching.
+
+
+2. Challenges with Shape Contexts
+   
+Shape Contexts [34]:
+A common method for shape matching.
+Ineffective for human body contours due to:
+
+Cross Matching: Incorrect associations between body parts (Fig. 4(a)).
+Part Shifting: Misalignment of body part contours (Fig. 4(b)).
+
+Lack of semantic body information leads to challenges in subsequent tasks like warping and head swapping.
+
+
+
+
+3. Manual Key Point Labeling (Inefficient Solution)
+Labeling key points along contours could help, but:
+
+Requires manual input for each image.
+Time-consuming and impractical for automated systems.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
