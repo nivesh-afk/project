@@ -95,20 +95,25 @@ Image warping involves deforming images based on control handles for manipulatio
 5.Finite Element Method (FEM): Kaufmann et al. proposed a unified framework using FEM for warping.
 
 
-# Initial Segmentation with GrabCut
+# 1. Initial Segmentation with GrabCut
 Algorithm:
 
 Graph-cut-based segmentation that iteratively optimizes masks.
 
 Traditionally requires user input, but here automated with prior knowledge.
 
+# 2. Heatmap Generation
+Saliency Heatmap (H):
+High-saliency regions are detected using [30].
+Heatmap values (0–255) are converted into a four-valued indicator function:
 
-# Initial Segmentation with GrabCut
-Algorithm:
+0: Background.
 
-Graph-cut-based segmentation that iteratively optimizes masks.
- 
-Traditionally requires user input, but here automated with prior knowledge.
+1: Probable background.
+
+2: Probable foreground.
+
+3: Foreground.
 
 
 
