@@ -193,6 +193,40 @@ Time-consuming and impractical for automated systems.
 
 
 
+Research Overview
+The paper presents a system that allows users to change their clothes virtually using their own photo and an image library.
+The system involves several steps: body segmentation, contour matching, image warping, and head swapping.
+Methodology
+Body Segmentation:
+Uses saliency detection and skin detection to generate a mask for the human body.
+The mask is refined using median filtering and guided image filtering.
+Contour Matching:
+Extracts boundary points from the body contour using edge detection.
+Utilizes Convolutional Pose Machines (CPM) to detect key joint points, which are then used to select control points on the body contour.
+Generates denser control points for triangle mesh generation to maintain body semantics.
+Image Warping:
+Compares two standard image warping methods: Radial Basis Functions (RBF) and Moving Least Squares (MLS).
+RBF is chosen due to its better performance in avoiding distortion and aliasing.
+Warping is performed using constrained Delaunay triangulation and barycentric coordinates.
+Head Swapping:
+Extracts the head contour from the mask.
+Determines the stitch line and fusion area based on the control points on the neck.
+Replaces the head and performs Poisson fusion to hide the stitching line.
+Results and Discussion
+The system can handle various input poses and body shapes, maintaining the user's body shape accurately.
+It performs well even in extreme cases with significant differences in height and weight.
+Comparison with other methods shows that the proposed system requires less user interaction and provides more accurate body warping results.
+Limitations and Future Work
+The system relies heavily on brightness and illumination for color-space-based image segmentation.
+It assumes no overlap between limbs and the body.
+The system only uses the contour of the clothes for shape recognition, which may not accurately reflect the user's body shape.
+Future work includes collecting more data to create a neural network for segmenting body parts and improving the warping method to avoid distortion in hands and shoes.
+Conclusions
+The system has broad applications, such as online virtual try-on and in-store customer experience.
+It aims to change the traditional way of selecting clothes by providing a quick and efficient way to visualize different outf
+
+
+
 
 
 
